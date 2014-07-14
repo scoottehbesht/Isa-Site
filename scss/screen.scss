@@ -1,0 +1,158 @@
+@import "reset";
+
+body {
+  font-family: Helvetica;
+  font-size: 20px;
+  line-height: 21px;
+  background: lighten(cornflowerblue,25%);
+}
+
+a {
+  color: #800000;
+}
+
+.pure-grid{
+    font-family: "Oswald";
+}
+// NAV
+
+.nav li {
+    border-bottom: 3px solid #333@media screen and (max-width:500px){
+  
+}
+}
+
+ul{
+    font-family: "Oswald";
+}
+
+// When I'm on the homepage,
+// the "home" nav should be active
+
+// When I'm on the purchase page,
+// the "purchase" nav should be active
+
+// ETC
+
+// CONTENT
+
+.wrap {
+    background:url(http://www.settlersstrategy.com/wp-content/uploads/2013/06/DualPort.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 600px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+%container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-grid {
+    @extend %container;
+}
+
+.hero-text {
+    // border: 1px solid blue;
+    background: white;
+    padding: 1.2em 1.4em;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+section.products {
+    padding: 100px 0;
+    @extend %container;
+
+    div {
+        // border: 1px solid blue;
+    }
+}
+
+h2 {
+    border-bottom: 1px solid #999;
+    padding-bottom: .5em;
+}
+
+section.purchase-form {
+    @extend %container;
+
+    padding-top: 2em;
+
+    .label-col {
+        padding: .4em 0;
+        font-weight: bold;
+    }
+
+    .pure-u-3-4 {
+        margin-bottom: 1em;
+        padding: .4em 0;
+    }
+
+    textarea {
+        height: 8em;
+    }
+
+    input {
+        left: 0;
+        position: relative;
+        transition: all 1s ease;
+        opacity: 1;
+    }
+
+    .help {
+        // display: none;
+        font-size: 14px;
+        padding-top: 0;
+        opacity: 0;
+        transition: all 1s ease;
+    }
+
+    input:focus {
+        // box-shadow: 0 0 20px green;
+        // left: 30px;
+        // opacity: 0.1;
+    }
+
+    input:focus + .help {
+        // display: block;
+        padding-top: .5em;
+        opacity: 1;
+    }
+}
+
+.choices label {
+}
+
+
+@media screen and (max-width:500px){
+  html{
+    min-width: 500px;
+  }
+  .wrap{
+    background-size: 300px;
+    background-color: white;
+    background-repeat: no-repeat;
+  }
+  .hero{
+    color: white;
+    font-family: "Oswald";
+    background: url(http://www.settlersstrategy.com/wp-content/uploads/2013/06/DualPort.jpg);
+    text-align: center;
+    height: 200px;
+    padding-top: 100px;
+    width: 500px;
+    background-size: 100% 100%;
+    letter-spacing: 5px;
+  }
+  }
+
+
+
+
+
+
+
+
